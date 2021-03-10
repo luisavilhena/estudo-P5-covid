@@ -3,7 +3,7 @@ var inc2 = 0.2;
 var start = 0;
 
 function setup() {
-  createCanvas(1200, 400);
+  createCanvas(1200, 300);
 }
 
 function vibracaoMenor() {
@@ -13,7 +13,7 @@ function vibracaoMenor() {
   for (var x =0; x < width; x++) {
     stroke(255, 255, 255)
     var y = noise(xoff) * 20;
-    vertex(x, 200 + y);
+    vertex(x, 100 + y);
     xoff += inc2;
   }
   endShape();
@@ -50,8 +50,8 @@ function draw() {
     if (frameCount <= 268370) {
       frameCount
     }
-    text(frameCount , 0, 300);
-    text("mortos por COVID no Brasil", 250, 300)
+    text(frameCount , 0, 200);
+    text("mortos por COVID no Brasil", 250, 200)
   } else {
     vibracaoMaior()
   }

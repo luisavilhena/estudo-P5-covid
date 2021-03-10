@@ -1,6 +1,10 @@
 body {
-	padding: 50px;
+	max-width: 1200px;
+	padding: 25px;
 	background-color: black;
+	margin: 0 auto;
+	color: white;
+	font-family: sans-serif;
 }
 
 .p5Canvas {
@@ -8,9 +12,26 @@ body {
 	display: flex;
 }
 
-h1 {
-	font-size: 90px;
+p {
+	font-size: 18px;
+	margin-top: 0;
+}
+/*p:first-child {
+	margin-bottom: 0px;
+}*/
+p:nth-of-type(2n+1) {
+	margin-bottom: 5px;
+}
+
+.poesia {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+h3 {
+	font-size: 16px;
 	color: white;
 	font-family: sans-serif;
-	text-align: center;
+	font-weight: 300;
 }
